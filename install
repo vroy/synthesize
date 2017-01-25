@@ -54,7 +54,6 @@ cp ${SYNTHESIZE_HOME}/templates/init.d/* /etc/init.d/
 # Setup the correct Apache site and modules
 a2dissite 000-default
 a2ensite graphite
-a2enmod ssl
 a2enmod socache_shmcb
 a2enmod rewrite
 

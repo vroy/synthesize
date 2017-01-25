@@ -84,10 +84,8 @@ sudo -u www-data /opt/graphite/bin/build-index.sh
 
 # Start our processes
 update-rc.d carbon-cache defaults
-service carbon-cache start
-service memcached start
-service collectd start
-service apache2 start
-service statsite start
-service apache2 restart
-
+service carbon-cache enable
+service memcached enable
+service collectd enable
+service apache2 enable
+service statsite enable
